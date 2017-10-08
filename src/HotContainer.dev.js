@@ -1,6 +1,6 @@
 const React = require('react')
 const PropTypes = require('prop-types')
-const deepForceUpdate = require('react-deep-force-update')
+const deepForceUpdate = require('./dfu')
 
 const { Component } = React
 

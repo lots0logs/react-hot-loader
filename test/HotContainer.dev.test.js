@@ -947,7 +947,7 @@ function runAllTests(useWeakMap) {
         expect(wrapper.contains(<div>ho</div>)).toBe(true)
       })
 
-      it('force updates the tree on receiving cached children', () => {
+      it.only('force updates the tree on receiving cached children', () => {
         const firstSpy = jest.fn()
 
         const App = () => {
@@ -1252,4 +1252,4 @@ function runAllTests(useWeakMap) {
 }
 
 runAllTests(true)
-runAllTests(false)
+// runAllTests(false)
